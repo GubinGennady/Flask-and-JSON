@@ -5,6 +5,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    '''
+    Загружает информацию обо всех кандидатах.
+    :return: Возвращает имя, должность, навык и умение кандидатов.
+    '''
     candidates = get_all()
     result = '<br>'
     for candidate in candidates:
@@ -17,6 +21,11 @@ def index():
 
 @app.route("/candidate/<int:pk>")
 def get_candidate(pk):
+    '''
+    Загружает кандидата по его ID = pk
+    :param pk: Применяет функцию get_candidate_by_pk(pk) для загрузки кандидата с использованием его id.
+    :return: Возвращает Фото, имя, должность, навык и умение кандидата.
+    '''
     candidate = get_candidate_by_pk(pk)
     if not candidate:
         return 'Кандидат не найден!'
@@ -27,14 +36,17 @@ def get_candidate(pk):
     result += '<br>'
 
     return f'''
-           <img src="{candidate['picture']}
-           <pre> {result} </pre>
-
+        <img src="{candidate['picture']}">
+        <pre> {result} </pre>
     '''
-
 
 @app.route("/candidate/<skill>")
 def get_candidate_bu_skills(skill):
+    '''
+    Выполняет поиск по кандидатам и по навыкам и умениям.
+    :param skill: Поиск навыков и умений кандидата.
+    :return Возвращает подходящего кандидата по его навыкам и умениям.
+    '''
     candidates = get_candidate_by_skill(skill)
     result = '<br>'
     for candidate in candidates:
@@ -46,6 +58,6 @@ def get_candidate_bu_skills(skill):
     return f'<pre> {result} </pre>'
 
 
-
 if __name__ == '__main__':
     app.run(debug=True)
+
