@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Адела Хендрикс",
+    "picture": "https://picsum.photos/200 ",
+    "position": "Go разработчик",
+    "gender": "женский",
+    "age": 40,
+    "skills": "давай, python"
+  },
+  {
+    "id": 2,
+    "name": "Шери Торрес",
+    "picture": "https://picsum.photos/200 ",
+    "position": "Разработчик Delphi",
+    "gender": "женский",
+    "age": 26,
+    "skills": "Delphi, pascal, fortran, basic"
+  },
+  {
+    "id": 3,
+    "name": "Берт Штайн",
+    "picture": "https://picsum.photos/200 ",
+    "position": "Руководитель группы",
+    "gender": "мужской",
+    "age": 33,
+    "skills": "делегирование, пользоваться календарем, обсуждать важные вопросы"
+  },
+  {
+    "id": 4,
+    "name": "Бауэр Адкинс",
+    "picture": "https://picsum.photos/200 ",
+    "position": "ТЕХНИЧЕСКИЙ директор",
+    "gender": "мужской",
+    "age": 37,
+    "skills": "очень важное лицо"
+  },
+  {
+    "id": 5,
+    "name": "Дэй Холлоуэй",
+    "picture": "https://picsum.photos/200 ",
+    "position": "Менеджер по персоналу",
+    "gender": "мужской",
+    "age": 35,
+    "skills": "LinkedIn, telegram, спам, спам, спам"
+  },
+  {
+    "id": 6,
+    "name": "Остин Кокран",
+    "picture": "https://picsum.photos/200 ",
+    "position": "python-разработка",
+    "gender": "мужской",
+    "age": 26,
+    "skills": "python, html"
+  },
+  {
+    "id": 7,
+    "name": "Шери Лав",
+    "picture": "https://picsum.photos/200 ",
+    "position": "Разработчик Django",
+    "gender": "женский",
+    "age": 33,
+    "skills": "Python, Django, flask"
+  }
+]
